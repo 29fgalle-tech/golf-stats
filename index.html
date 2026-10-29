@@ -1,11 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Golf Stats</title>
+
+  <!-- STYLE: this part controls how the page looks (colors, sizes, spacing) -->
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, Helvetica, Arial, sans-serif;
+      background: #1f6b3a;
+      color: white;
+      text-align: center;
+    }
+    .intro {
+      padding: 60px 20px 30px;
+    }
+    .logo {
+      font-size: 64px;
+    }
+    h1 {
+      font-size: 36px;
+      margin: 10px 0 5px;
+    }
+    .tagline {
+      font-size: 18px;
+      opacity: 0.85;
+    }
+    .card {
+      background: white;
+      color: #14301f;
+      border-radius: 16px;
+      padding: 18px;
+      margin: 14px 20px;
+      text-align: left;
+    }
+    .card h2 {
+      font-size: 18px;
+      margin: 0 0 6px;
+    }
+    .card p {
+      margin: 0;
+      color: #4f6657;
+    }
+    button {
+      background: #f2c230;
+      color: #14301f;
+      border: none;
+      border-radius: 999px;
+      padding: 16px 32px;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 24px 0 40px;
+    }
+  </style>
 </head>
 <body>
-  <h1>My Golf Stats</h1>
-  <p>Coming soon!</p>
+
+  <!-- HTML: this part is the content you see -->
+  <div class="intro">
+    <div class="logo">⛳</div>
+    <h1>Golf Stats</h1>
+    <p class="tagline">Track your game. Find your weak spots. Get better.</p>
+  </div>
+
+  <div class="card">
+    <h2>1. Track your rounds</h2>
+    <p>Enter your score, putts, fairways and greens for every hole.</p>
+  </div>
+
+  <div class="card">
+    <h2>2. See your stats</h2>
+    <p>Your averages are calculated automatically after each round.</p>
+  </div>
+
+  <div class="card">
+    <h2>3. Get drills</h2>
+    <p>The app finds what is costing you the most strokes and suggests drills.</p>
+  </div>
+
+  <button onclick="startApp()">Start tracking</button>
+
+  <!-- JAVASCRIPT: this part makes the page do things -->
+  <script>
+    function startApp() {
+      alert("Coming soon! This is where you'll enter your first round.");
+    }
+  </script>
+
 </body>
 </html>
